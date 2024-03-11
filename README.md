@@ -16,7 +16,8 @@ You are required to help the manager to predict the right group of the new custo
 
 ## Neural Network Model
 
-![image](https://github.com/PSriVarshan/nn-classification/assets/114944059/3ac2a332-0128-43cd-bc0d-48a482b84268)
+![image](https://github.com/DINESH18032004/nn-classification/assets/119477784/f662baf5-6bb8-42f0-835a-ad957050e057)
+
 
 
 ## DESIGN STEPS
@@ -239,9 +240,9 @@ X_test_scaled[:,2] = scaler_age.transform(X_test[:,2].reshape(-1,1)).reshape(-1)
 ```py
 # Creating the model
 ai_brain = Sequential([
-  Dense(4,input_shape=(8,)),
+  Dense(8,input_shape=(8,)),
   Dense(8,activation='relu'),
-  Dense(8,activation='relu'),
+  Dense(4,activation='relu'),
   Dense(4,activation='softmax'),
 ])
 ```
@@ -309,28 +310,33 @@ print(le.inverse_transform(x_single_prediction))
 
 ### Heat map
 
-![image](https://github.com/PSriVarshan/nn-classification/assets/114944059/15d185f2-655a-41ea-b8d9-389ac482a930)
+![image](https://github.com/DINESH18032004/nn-classification/assets/119477784/1fa03218-37ff-4d43-af7b-279ab29d4d0d)
+
+
 
 
 ### Training Loss, Validation Loss Vs Iteration Plot
 
-![image](https://github.com/PSriVarshan/nn-classification/assets/114944059/9d3c6a26-60bf-4414-97a3-cd6913e8a60e)
+![image](https://github.com/DINESH18032004/nn-classification/assets/119477784/dd3df59b-b886-458b-a478-ab47d172946a)
+
 
 
 ### Classification Report
 
+![image](https://github.com/DINESH18032004/nn-classification/assets/119477784/a6f86099-0baf-4b47-8ac6-dc41ac943aa6)
 
-![image](https://github.com/PSriVarshan/nn-classification/assets/114944059/e852844a-ea37-4b0d-bc5f-3d6f407d8ef3)
 
 
 
 ### Confusion Matrix
 
-![image](https://github.com/PSriVarshan/nn-classification/assets/114944059/44d78441-89a6-4174-a2fc-4b011017e6b2)
+![image](https://github.com/DINESH18032004/nn-classification/assets/119477784/1174a014-c3b5-40fa-b159-171534f00d8b)
+
 
 ### New Sample Data Prediction
 
-![image](https://github.com/PSriVarshan/nn-classification/assets/114944059/d6897d36-4811-4de8-9e47-0832a77a4921)
+![image](https://github.com/DINESH18032004/nn-classification/assets/119477784/e3c32f95-0754-4414-ab2d-9b7ea25e44e2)
+
 
 
 ## RESULT
